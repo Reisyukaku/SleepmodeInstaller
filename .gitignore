@@ -1,0 +1,7 @@
+*.smdh
+*.3dsx
+*.cia
+*.elf
+build
+res/icon.icn
+res/banner.bnr
