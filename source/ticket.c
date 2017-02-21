@@ -23,7 +23,7 @@ void BuildCetk(unsigned char *out, const u8 *sig, const unsigned long long title
     memcpy(&tikData->titleKey, encKey, 0x10);
     memcpy(&tikData->titleID, &tidBE, 8);
     memcpy(&tikData->ticketID, tikID, 8);
-    tikData->commKeyIndex = 1;
+    tikData->commKeyIndex = 0;
     tik->ticketData = *tikData;
     memcpy(&tik->chainSig, chainSig, 0x700);
     

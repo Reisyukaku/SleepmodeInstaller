@@ -2,6 +2,7 @@
 *.3dsx
 *.cia
 *.elf
+*.zip
 build
 res/icon.icn
 res/banner.bnr
