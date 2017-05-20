@@ -20,7 +20,7 @@ static Result downloadTitleKeys(u64 tid, char **json){
     unsigned char *buf = NULL;
     unsigned char *newbuf = NULL;
 
-    if(R_FAILED(res = httpcOpenContext(&ctx, HTTPC_METHOD_GET, "https://3ds.titlekeys.com/json_enc", 1))) goto clean;
+    if(R_FAILED(res = httpcOpenContext(&ctx, HTTPC_METHOD_GET, "http://3ds.titlekeys.gq/json_enc", 1))) goto clean;
     require_close = true;
 
     if(R_FAILED(res = httpcSetSSLOpt(&ctx, SSLCOPT_DisableVerify))) goto clean;
